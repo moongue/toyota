@@ -1,0 +1,31 @@
+.footer {
+  margin-top: 58px;
+  .contacts {
+    font-size: 14px;
+    line-height: 1.36;
+    max-width: 185px;
+  }
+  .copyright {
+    padding-top: 21px;
+    font-size: 10px;
+  }
+  .tel {
+    white-space: nowrap;
+  }
+  .btn {
+    padding: 0 15px;
+    a {
+      font-size: 14px;
+      text-transform: none;
+      text-decoration: underline;
+      border: none;
+      background: transparent;
+      padding: 0;
+    }
+  }
+  .d-flex {
+    p {
+      max-width: 150px;
+    }
+  }
+}

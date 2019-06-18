@@ -1,0 +1,35 @@
+//Breakpoint
+$xs: "only screen and (max-width : 576px)";
+$sm: "only screen and (max-width : 767px)";
+$md: "only screen and (max-width : 992px)";
+$lg: "only screen and (max-width : 1200px)";
+$xl: "only screen and (max-width : 1400px)";
+$xll: "only screen and (max-width : 1680px)";
+
+//Colors
+$bg-body: #12191f;
+$greyish-brown: #505050;
+$pinkish-grey: #c2c2c2;
+$warm-grey: #828282;
+$white: #ffffff;
+$white-two: #eee;
+$white-three: #dedede;
+$white-four: #f8f8f8;
+$beige: #fcf7f1;
+$dark: #12191f;
+$black: #2e2e2e;
+$red: #cf0000;
+
+//Colors rgba
+$white-30: rgba(255 ,255, 255, .3);
+$white-50: rgba(255 ,255, 255, .5);
+$white-80: rgba(255 ,255, 255, .8);
+$white-85: rgba(255 ,255, 255, .85);
+$white-92: rgba(255 ,255, 255, .92);
+$white-95: rgba(255 ,255, 255, .95);
+
+$red-80: rgba(207, 0, 0, .8);
+$red-95: rgba(207, 0, 0, .95);
+
+$dark-90: rgba(18, 25, 31, .9);
+$dark-63: rgba(18, 25, 31, .63);

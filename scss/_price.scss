@@ -1,0 +1,42 @@
+.price-block {
+  padding-top: 191px;
+  padding-bottom: 100px;
+  background: $white;
+  margin-top: -120px;
+  .table {
+    margin-top: 75px;
+    .name-price, .item-price {
+      padding: 17px 0;
+      p {
+        &:first-child {
+          flex-basis: 70%;
+        }
+        &:nth-child(2) {
+          flex-basis: 20%;
+        }
+        &:nth-child(3) {
+          flex-basis: 10%;
+        }
+        &:nth-child(n + 2) {
+          text-align: center;
+        }
+      }
+    }
+    .name-price {
+      background: $dark;
+      color: $white;
+      font-size: 24px;
+    }
+    .item-price {
+      color: $greyish-brown;
+      line-height: 1.38;
+      font-size: 16px;
+      p:nth-child(2) {
+        font-weight: 600;
+      }
+      &:nth-child(odd) {
+        background: $white-two;
+      }
+    }
+  }
+}

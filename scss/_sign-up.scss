@@ -1,0 +1,44 @@
+.sign-up-section {
+  color: $white;
+  position: relative;
+  .title {
+    max-width: 470px;
+    padding-top: 63px;
+    padding-bottom: 63px;
+  }
+  .top {
+    .img-pos {
+      margin-top: 80px;
+      margin-bottom: -120px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    p {
+      max-width: 133px;
+    }
+  }
+  .bottom {
+    padding-top: 125px;
+    padding-bottom: 75px;
+    background: url(../images/bg-mask.svg) no-repeat right center $white;
+    .wrap-input {
+      p {
+        color: $pinkish-grey;
+        padding-left: 23px;
+        padding-bottom: 19px;
+        font-size: 12px;
+        font-family: 'Segoe UI', 'Toyota Display', sans-serif;
+      }
+    }
+    .row {
+      &:nth-child(2) {
+        margin-top: 60px;
+      }
+    }
+    .check {
+      margin-top: 33px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.about {
+  margin-top: 135px;
+  .about-services {
+    background: $white;
+    .title {
+      padding-top: 91px;
+    }
+    p {
+      padding-top: 40px;
+      padding-bottom: 58px;
+      max-width: 582px;
+      line-height: 1.13;
+    }
+    .bg-about {
+      background: url(../images/2018_Toyota_Service_Asset_11_0027_1_v3.jpg) no-repeat;
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+  }
+  .map {
+    margin-top: 157px;
+    iframe {
+      width: 100%;
+      height: 505px;
+    }
+  }
+}
