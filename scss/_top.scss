@@ -7,6 +7,7 @@
   }
   .top-block {
     .left {
+      z-index: 9;
       padding-left: 47px;
       p {
         padding-top: 40px;
@@ -69,8 +70,18 @@
         max-width: 128px;
         line-height: 1.29;
       }
+      .logo {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
       .d-flex {
         margin-top: 38px;
+        p {
+          padding-right: 2px;
+          padding-bottom: 39px;
+        }
       }
     }
   }

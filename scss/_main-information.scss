@@ -1,4 +1,5 @@
 .main-information {
+
   .principle-operation {
     background: url(../images/bg-principle.jpg) no-repeat calc((100% - 74px)) 15% $white;
     padding-top: 75px;
@@ -18,7 +19,7 @@
   }
   .block-images {
     &.dark {
-      .col-2, .col-4 {
+      .no-gutters {
         position: relative;
         &:before {
           content: '';
@@ -32,7 +33,7 @@
       }
     }
     .row {
-      .col-4, .col-2 {
+      .no-gutters {
         padding: 0;
       }
       &:first-child {
@@ -54,6 +55,11 @@
   .repairs {
     background: $white;
     margin-top: 112px;
+    .title {
+      p {
+        padding-bottom: 0;
+      }
+    }
     .bg-repairs {
       background: url(../images/bg-repairs.jpg) no-repeat;
       -webkit-background-size: cover;
@@ -74,14 +80,18 @@
     }
     p {
       margin-top: 56px;
+      padding-bottom: 59px;
       max-width: 582px;
       line-height: 1.13;
     }
     .have-question {
-      padding-top: 211px;
       max-width: 335px;
+      padding-top: 132px;
       margin: 0 auto;
       color: $white;
+      .top, .bot {
+        padding: 0 10px;
+      }
       .btn {
         max-width: 280px;
         margin: 0 auto;
@@ -89,6 +99,7 @@
       }
       p {
         padding-top: 21px;
+        padding-bottom: 0;
         margin: 0;
         &.big {
           padding-top: 40px;

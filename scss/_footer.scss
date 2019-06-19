@@ -10,7 +10,7 @@
     font-size: 10px;
   }
   .tel {
-    white-space: nowrap;
+      max-width: 100% !important;
   }
   .btn {
     padding: 0 15px;

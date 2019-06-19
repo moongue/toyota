@@ -5,6 +5,12 @@ body {
   color: $greyish-brown;
 }
 
+.blocker {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+
 .wrapper {
   max-width: 1920px;
   margin: 0 auto;
@@ -37,6 +43,7 @@ button:active {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 }
 
+
 //Text
 .t-bold {
   font-weight: 600;
@@ -68,6 +75,7 @@ button:active {
 
 .tel {
   font-size: 22px;
+
   span {
     font-size: 28px;
   }
@@ -77,6 +85,7 @@ button:active {
   font-size: 38px;
   line-height: 1.11;
   text-transform: uppercase;
+
   p {
     font-family: 'Toyota Display', 'Segoe UI', sans-serif !important;
   }
@@ -166,19 +175,23 @@ option:focus {
       a {
         background: $dark;
         color: $white;
+
         img {
           filter: brightness(100);
         }
       }
     }
+
     a {
       border: 2px solid $dark;
       color: $dark;
+
       img {
         filter: brightness(0);
       }
     }
   }
+
   a {
     padding: 14px 24px;
     border: 2px solid $white;
@@ -189,6 +202,7 @@ option:focus {
     display: flex;
     align-items: center;
     justify-content: center;
+
     img {
       padding-right: 16px;
     }
@@ -207,6 +221,7 @@ option:focus {
   font-size: 16px;
   font-weight: 300;
   font-family: "Segoe UI", 'Toyota Display', sans-serif;
+
   &:focus {
     background: $beige;
     border-bottom: 3px solid $red;
@@ -218,10 +233,12 @@ option:focus {
   input[type=checkbox], input[type=radio] {
     display: none;
   }
+
   label {
     font-size: 12px;
     color: $pinkish-grey;
   }
+
   input[type=checkbox] + label:before {
     content: "\2713";
     color: transparent;
@@ -271,6 +288,7 @@ option:focus {
   padding: 0 27px;
   cursor: pointer;
   position: relative;
+
   &.on {
     background: $beige;
     border-bottom: 3px solid $red;
@@ -323,13 +341,16 @@ option:focus {
   position: fixed;
   top: calc((100% - 260px) / 2);
   z-index: 645;
+
   ul {
     li {
       width: 86px;
       height: 130px;
+
       &:nth-child(n + 2) {
         border-top: 1px solid rgba(0, 0, 0, .6);
       }
+
       a {
         display: flex;
         align-items: center;

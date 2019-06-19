@@ -1,6 +1,7 @@
 .sign-up-section {
   color: $white;
   position: relative;
+  margin-top: 112px;
   .title {
     max-width: 470px;
     padding-top: 63px;
@@ -16,7 +17,12 @@
       }
     }
     p {
-      max-width: 133px;
+      max-width: 140px;
+    }
+    .d-flex {
+      p {
+        padding-right: 10px;
+      }
     }
   }
   .bottom {

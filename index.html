@@ -5,11 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
     <script src="js/script.js"></script>
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Toyota</title>
 </head>
@@ -23,25 +26,70 @@
                 </div>
                 <div class="block-with-logo">
                     <p class="t-upper">
-                        ремонт блока <span class="t-black t-bold d-flex">kdss Toyota</span>land cruiser
+                        ремонт блока <span class="t-black t-bold">kdss Toyota</span> land cruiser
                     </p>
                 </div>
             </div>
             <div class="container-fluid">
                 <div class="wrapper-content align-self-center">
-                    <nav>
-                        <ul>
-                            <li><a href="#">Принцип работы <span class="t-upper t-dark t-bold">Kdss</span></a></li>
-                            <li><a href="#">Ремонт системы <span class="t-upper t-dark t-bold">Kdss</span></a></li>
-                            <li><a href="#"><span class="t-upper t-dark t-bold">Цены</span></a></li>
-                            <li><a href="#">Про наш <span class="t-upper t-dark t-bold">Сервис</span></a></li>
-                            <li class="tel d-flex align-items-center"><img src="images/old-telephone-ringing.svg"
-                                                                           alt="">
+                    <div class="main-header">
+
+                        <div class="logo">
+                            <img src="images/toyota_logo.jpg" alt="Logo">
+                        </div>
+                        <div class="press-left d-flex align-items-center justify-content-between">
+                            <nav>
+                                <ul class="navigation">
+                                    <li><a href="#principle-working">Принцип работы <span class="t-upper t-dark t-bold">Kdss</span></a>
+                                    </li>
+                                    <li><a href="#repairs">Ремонт системы <span class="t-upper t-dark t-bold">Kdss</span></a>
+                                    </li>
+                                    <li><a href="#price"><span class="t-upper t-dark t-bold">Цены</span></a></li>
+                                    <li><a href="#about">Про наш <span class="t-upper t-dark t-bold">Сервис</span></a></li>
+
+                                </ul>
+                            </nav>
+                            <div class="tel d-flex align-items-center"><img src="images/old-telephone-ringing.svg"
+                                                                            alt="">
                                 <p><span
-                                        class="grey">+7 </span> <span class="red">495 </span> 545-38-24
-                                </p></li>
+                                        class="grey"> +7 </span> <span class="red"> 495 </span> 545-38-24</p>
+                            </div>
+                        </div>
+                        <a href="#" class="sign-up d-flex flex-column justify-content-center align-items-center">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/calendar-with-a-clock-time-tools.svg" alt="">
+                                    <p>Записатся<br> на <span class="t-upper">ремонт</span></p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="mobile-menu-toggle d-none">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                        </div>
+
+                    </div>
+                    <div class="dropdown-header">
+                        <ul class="navigation">
+                            <li><a href="#principle-working">Принцип работы <span class="t-upper t-dark t-bold">Kdss</span></a>
+                            </li>
+                            <li><a href="#repairs">Ремонт системы <span class="t-upper t-dark t-bold">Kdss</span></a>
+                            </li>
+                            <li><a href="#price"><span class="t-upper t-dark t-bold">Цены</span></a></li>
+                            <li><a href="#about">Про наш <span class="t-upper t-dark t-bold">Сервис</span></a></li>
+
                         </ul>
-                    </nav>
+                        <a href="#"
+                           class="sign-up d-flex flex-column justify-content-center align-items-center">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/calendar-with-a-clock-time-tools.svg" alt="">
+                                    <p>Записатся<br> на <span class="t-upper">ремонт</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
             <a href="#" class="sign-up max-337 d-flex justify-content-center">
@@ -68,7 +116,7 @@
                 <section class="top-content d-flex flex-column">
                     <div class="top-block bg-w80">
                         <div class="row no-gutters">
-                            <div class="left col-3 bg-w50 offset-top offset-bottom">
+                            <div class="left col-4 col-lg-3 bg-w50 offset-top offset-bottom">
                                 <img src="images/landcruiser-200.png" alt="Landcruiser">
                                 <p class="t-upper t-dark">Ремонт блока Kdss Toyota
                                     <span class="t-bold">lс 200</span></p>
@@ -76,7 +124,7 @@
                             <div class="middle col-5 offset-top offset-bottom">
                                 <img src="images/landcruiser-200@2x.png" alt="Landcruiser">
                             </div>
-                            <div class="right col-4 offset-top offset-bottom d-flex flex-column align-items-center">
+                            <div class="right col-8 col-lg-4 offset-top offset-bottom d-flex flex-column align-items-center">
                                 <p class="t-upper t-dark">Горит ошибка <span class="t-bold t-dark">kdss prado 150</span>
                                 </p>
                                 <div class="mistake">
@@ -87,7 +135,7 @@
                     </div>
                     <div class="bottom-block bg-r80 t-white">
                         <div class="row no-gutters">
-                            <div class="left col-8">
+                            <div class="left col-12 col-md-6 col-lg-8">
                                 <div class="title">
                                     Ремонт блока <span class="t-bold">kdss
                                 toyota</span> land cruiser
@@ -97,11 +145,11 @@
                                     <a href="#">Подробнее <span class="t-bold">о ремонте</span></a>
                                 </div>
                             </div>
-                            <div class="right col-4 bg-r80">
+                            <div class="right col-12 col-md-6 col-lg-4 bg-r80">
                                 <div class="btn">
                                     <a href="#"><img src="images/automobile-with-wrench.svg" alt="">Консультация мастера</a>
                                 </div>
-                                <div class="d-flex justify-content-between">
+                                <div class="d-flex justify-content-between align-items-end">
                                     <p class="t-upper">
                                         <span class="t-small">Сертифицированный</span> ремонт блока <span
                                             class="t-bold">kdss toyota</span>
@@ -115,14 +163,14 @@
                         </div>
                     </div>
                     <div class="row d-flex justify-content-end no-gutters">
-                        <div class="col-4">
+                        <div class="col-12 col-md-6 col-lg-4">
                             <div class="price">
                                 от 11 500 руб
                             </div>
                         </div>
                     </div>
                     <div class="row no-gutters">
-                        <div class="col-3">
+                        <div class="col-md-3 col-6">
                             <div class="more-about bg-w95 d-flex flex-column align-items-center justify-content-center">
                                 <div class="link">
                                     <a href="#">Подробнее о <span>Kdss</span></a>
@@ -137,7 +185,7 @@
     </div>
 </div>
 <div class="container-fluid">
-    <main class="main-information">
+    <main class="main-information" id="principle-working">
         <div class="principle-operation">
             <div class="wrapper-content">
                 <div class="title t-dark">
@@ -162,34 +210,52 @@
 
             <div class="block-images">
                 <div class="row non-m-offset">
-                    <div class="col-4 no-gutters">
-                        <img src="images/principle-1.jpg" alt="">
+                    <div class="col-12 col-sm-4 no-gutters">
+                        <a data-fancybox="gallery" href="images/principle-gallery-1.jpg">
+                            <img src="images/principle-1.jpg" alt="">
+                        </a>
                     </div>
-                    <div class="col-4 no-gutters">
-                        <img src="images/principle-3.jpg" alt="">
+                    <div class="col-12 col-sm-4 no-gutters">
+                        <a data-fancybox="gallery" href="images/principle-gallery-2.jpg">
+                            <img src="images/principle-3.jpg" alt="">
+                        </a>
                     </div>
-                    <div class="col-4 no-gutters">
-                        <img src="images/principle-4.jpg" alt="">
+                    <div class="col-12 col-sm-4 no-gutters">
+                        <a data-fancybox="gallery" href="images/principle-gallery-3.jpg">
+                            <img src="images/principle-4.jpg" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="row non-m-offset">
-                    <div class="col-2 no-gutters">
-                        <img src="images/principle-2.jpg" alt="">
+                    <div class="col-6 col-sm-2 no-gutters">
+                        <a data-fancybox="gallery" href="images/principle-gallery-4.jpg">
+                            <img src="images/principle-2.jpg" alt="">
+                        </a>
                     </div>
-                    <div class="col-2 no-gutters">
-                        <img src="images/principle-5.jpg" alt="">
+                    <div class="col-6 col-sm-2 no-gutters">
+                        <a data-fancybox="gallery" href="images/principle-gallery-5.jpg">
+                            <img src="images/principle-5.jpg" alt="">
+                        </a>
                     </div>
-                    <div class="col-2 no-gutters">
-                        <img src="images/principle-6.jpg" alt="">
+                    <div class="col-6 col-sm-2 no-gutters">
+                        <a data-fancybox="gallery" href="images/principle-gallery-6.jpg">
+                            <img src="images/principle-6.jpg" alt="">
+                        </a>
                     </div>
-                    <div class="col-2 no-gutters">
-                        <img src="images/principle-7.jpg" alt="">
+                    <div class="col-6 col-sm-2 no-gutters">
+                        <a data-fancybox="gallery" href="images/principle-gallery-7.jpg">
+                            <img src="images/principle-7.jpg" alt="">
+                        </a>
                     </div>
-                    <div class="col-2 no-gutters">
-                        <img src="images/principle-8.jpg" alt="">
+                    <div class="col-6 col-sm-2 no-gutters">
+                        <a data-fancybox="gallery" href="images/principle-gallery-8.jpg">
+                            <img src="images/principle-8.jpg" alt="">
+                        </a>
                     </div>
-                    <div class="col-2 no-gutters">
-                        <img src="images/principle-9.jpg" alt="">
+                    <div class="col-6 col-sm-2 no-gutters">
+                        <a data-fancybox="gallery" href="images/principle-gallery-9.jpg">
+                            <img src="images/principle-9.jpg" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -207,9 +273,9 @@
                 </p>
             </div>
         </div>
-        <div class="repairs">
+        <div class="repairs" id="repairs">
             <div class="row non-m-offset">
-                <div class="col-8 no-gutters main-offset">
+                <div class="col-12 col-md-8 no-gutters main-offset">
                     <div class="title t-dark">
                         <p class="t-upper t-bold">Ремонт kdss</p>
                     </div>
@@ -242,7 +308,7 @@
                         150.
                     </p>
                 </div>
-                <div class="col-4 bg-repairs no-gutters">
+                <div class="col-12 col-md-4 bg-repairs no-gutters">
                     <div class="have-question">
                         <div class="top bg-r80 t-center">
                             <p class="big t-upper">Есть вопросы</p>
@@ -262,39 +328,39 @@
             </div>
             <div class="block-images dark">
                 <div class="row non-m-offset">
-                    <div class="col-4 no-gutters">
+                    <div class="col-12 col-sm-4 no-gutters">
                         <img src="images/repairs-1.jpg" alt="">
                     </div>
-                    <div class="col-4 no-gutters">
+                    <div class="col-12 col-sm-4 no-gutters">
                         <img src="images/repairs-2.jpg" alt="">
                     </div>
-                    <div class="col-4 no-gutters">
+                    <div class="col-12 col-sm-4 no-gutters">
                         <img src="images/repairs-3.jpg" alt="">
                     </div>
                 </div>
                 <div class="row non-m-offset">
-                    <div class="col-2 no-gutters">
+                    <div class="col-6 col-sm-2 no-gutters">
                         <img src="images/repairs-4.jpg" alt="">
                     </div>
-                    <div class="col-2 no-gutters">
+                    <div class="col-6 col-sm-2 no-gutters">
                         <img src="images/repairs-5.jpg" alt="">
                     </div>
-                    <div class="col-2 no-gutters">
+                    <div class="col-6 col-sm-2 no-gutters">
                         <img src="images/repairs-6.jpg" alt="">
                     </div>
-                    <div class="col-2 no-gutters">
+                    <div class="col-6 col-sm-2 no-gutters">
                         <img src="images/repairs-7.jpg" alt="">
                     </div>
-                    <div class="col-2 no-gutters">
+                    <div class="col-6 col-sm-2 no-gutters">
                         <img src="images/repairs-8.jpg" alt="">
                     </div>
-                    <div class="col-2 no-gutters">
+                    <div class="col-6 col-sm-2 no-gutters">
                         <img src="images/repairs-9.jpg" alt="">
                     </div>
                 </div>
             </div>
             <div class="row non-m-offset">
-                <div class="col-8 main-offset">
+                <div class="col-12 col-md-8 main-offset">
                     <div class="subtitle">
                         Надежность системы ее неисправности
                         и методы ремонта
@@ -347,25 +413,25 @@
         <div class="bottom">
             <div class="wrapper-content">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-12 col-sm-6 col-lg-3">
                         <div class="wrap-input">
                             <p>Укажите Ваше Имя</p>
                             <input type="text" class="styles-input" placeholder="Имя">
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-sm-6 col-lg-3">
                         <div class="wrap-input">
                             <p>Укажите номер мобильного</p>
-                            <input type="tel" class="styles-input" placeholder="+7( __ ) __ - __ - __">
+                            <input type="tel" class="styles-input mask-number" placeholder="+7( ___ ) ___ - __ - __">
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-sm-6 col-lg-3">
                         <div class="wrap-input">
                             <p>Укажите модель авто</p>
                             <input type="text" class="styles-input" placeholder="e-mail">
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-sm-6 col-lg-3">
                         <div class="wrap-input">
                             <div class="select-wrap">
                                 <p>Укажите модель авто</p>
@@ -379,17 +445,17 @@
                     </div>
                 </div>
                 <div class="row align-items-center">
-                    <div class="col-3">
+                    <div class="col-12 col-sm-6 col-md-3">
                         <div class="btn black-theme choose">
                             <a href="#"><img src="images/automobile-with-wrench.svg" alt="">Записаться</a>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-sm-6 col-md-3">
                         <div class="btn black-theme">
                             <a href="#"><img src="images/call-center-operator.svg" alt="">Заказать звонок</a>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col">
                         <p class="tel t-dark">
                             <span>+ 7 495</span> 545-38-24
                         </p>
@@ -404,7 +470,7 @@
         </div>
     </section>
 </div>
-<section class="price-block">
+<section class="price-block" id="price">
     <div class="container-fluid">
         <div class="wrapper-content">
             <div class="title t-dark">
@@ -459,11 +525,11 @@
     </div>
 </section>
 
-<section class="about">
+<section class="about" id="about">
     <div class="container-fluid">
         <div class="about-services">
             <div class="row non-m-offset">
-                <div class="col-8 main-offset">
+                <div class="col-12 col-md-8 main-offset">
                     <div class="title t-dark">
                         О нашем <span class="t-bold">сервисе</span>
                     </div>
@@ -528,7 +594,7 @@
             <p class="tel">
                 <span>+ 7 495 </span>545-38-24
             </p>
-            <div class="d-flex align-items-center">
+            <div class="logo-block d-flex align-items-center">
                 <p class="t-upper">ремонт блока <span
                         class="t-bold">kdss toyota</span>
                     land cruiser

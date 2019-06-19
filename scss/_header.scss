@@ -6,12 +6,81 @@
     width: 100%;
     flex-shrink: 2;
   }
+  .container-fluid {
+    min-width: 1246px;
+  }
+  .main-header {
+    .sign-up {
+      display: none !important;
+    }
+    .logo {
+      display: none;
+    }
+  }
+
   .logo {
     max-height: 135px;
     img {
       width: 100%;
       height: auto;
     }
+  }
+  .mobile-menu-toggle {
+    z-index: 877;
+    margin-top: 23px;
+    position: relative;
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all .5s;
+    text-align: left;
+
+    div,
+    div:before,
+    div:after {
+      background: $dark;
+      position: absolute;
+      height: 3px;
+      width: 40px;
+      border-radius: 4px;
+      transition: all .5s;
+    }
+
+    div:first-child {
+      top: 0;
+    }
+    div:nth-child(2) {
+      top: 10px;
+    }
+    div:nth-child(3) {
+      top: 20px;
+    }
+    &.active {
+      div {
+        background: $white;
+      }
+      div:first-child {
+        top: 6%;
+        left: 7%;
+        width: 50%;
+        transform: rotate(45deg);
+        transition: width .15s, top .15s .15s, left .15s .15s, transform .15s .15s;
+      }
+      div:nth-child(2) {
+        transform: rotate(-45deg);
+        transition: transform .15s .15s;
+      }
+      div:nth-child(3) {
+        width: 50%;
+        right: 7%;
+        top: 45%;
+        transform: rotate(45deg);
+        transition: width .15s, top .15s .15s, right .15s .15s, transform .15s .15s;
+      }
+    }
+
   }
   .block-with-logo {
     background: $white-two;
@@ -23,9 +92,13 @@
     font-size: 14px;
     line-height: 1.29;
     flex-basis: 60%;
+    p {
+      max-width: 112px;
+    }
   }
   nav {
-    ul {
+    flex-grow: 1;
+    .navigation {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -36,21 +109,23 @@
           font-size: 14px;
           text-decoration: none;
         }
-        &.tel {
-          font-size: 22px;
-          img {
-            padding-right: 10px;
-          }
-          .grey {
-            color: $white-three;
-            font-size: 28px;
-          }
-          .red {
-            color: $red;
-            font-size: 28px;
-          }
-        }
+
       }
+    }
+  }
+  .tel {
+    font-size: 22px;
+    padding-left: 50px;
+    img {
+      padding-right: 10px;
+    }
+    .grey {
+      color: $white-three;
+      font-size: 28px;
+    }
+    .red {
+      color: $red;
+      font-size: 28px;
     }
   }
   .sign-up {
@@ -64,6 +139,54 @@
     text-decoration: none;
     img {
       padding-right: 10px;
+    }
+  }
+  .dropdown-header {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: $dark-90;
+    z-index: 766;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    transform: scale(.6);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+    transform-origin: top right;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &.show {
+      transform: scale(1);
+      visibility: visible;
+      opacity: 1;
+      border-radius: 0;
+    }
+    .navigation {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 100px;
+      li {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        a {
+          color: $white;
+          width: 100%;
+          text-decoration: none;
+          font-size: 28px;
+          span {
+            color: $white;
+          }
+        }
+      }
+    }
+    .sign-up {
+      height: 90px;
     }
   }
 }
