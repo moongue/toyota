@@ -43,6 +43,9 @@ button:active {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 }
 
+.md-show {
+  display: none;
+}
 
 //Text
 .t-bold {
@@ -202,6 +205,7 @@ option:focus {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: left;
 
     img {
       padding-right: 16px;
@@ -285,7 +289,7 @@ option:focus {
   height: 56px;
   display: flex;
   align-items: center;
-  padding: 0 27px;
+  padding: 0 34px 0 24px;
   cursor: pointer;
   position: relative;
 
