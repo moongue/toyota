@@ -729,6 +729,7 @@ option:focus {
   max-width: 430px;
   left: 305px;
   top: 68px;
+  opacity: 1;
 }
 
 .top-content .top-block .left {
@@ -1362,7 +1363,7 @@ option:focus {
   }
 
   .top-content .loop .slide.choose {
-    max-width: 486px !important;
+    max-width: 526px !important;
     width: 100%;
   }
 
@@ -1397,6 +1398,13 @@ option:focus {
   }
 }
 
+@media only screen and (max-width: 836px) {
+  .top-content .loop .slide.choose {
+    max-width: 453px !important;
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .title {
     font-size: 28px;
@@ -1420,11 +1428,13 @@ option:focus {
   }
 
   .top-content .left {
-    min-height: 340px;
+    min-height: 280px;
   }
 
   .top-content .loop .slide {
     left: 15px !important;
+    max-width: 150px !important;
+    top: 70px !important;
   }
 
   .top-content .loop .slide.choose {
