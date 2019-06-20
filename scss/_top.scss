@@ -2,38 +2,91 @@
   .offset-top {
     padding-top: 42px;
   }
+
   .offset-bottom {
     padding-bottom: 35px;
   }
+
   .top-block {
+    .pos-rel {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      .loop-block {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 243;
+      }
+
+      .loop {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        .slide {
+          max-width: 230px;
+          position: absolute;
+          top: 58px;
+          left: 58px;
+          transition-property: max-width, left, top;
+          transition-duration: 3s;
+          transition-timing-function: ease;
+          z-index: 1;
+        }
+
+        .slide img {
+          width: 100%;
+          height: auto;
+        }
+
+        .slide.choose {
+          transition-property: max-width, left, top;
+          transition-duration: 3s;
+          z-index: 3;
+          max-width: 430px;
+          left: 305px;
+          top: 68px;
+        }
+      }
+    }
+
     .left {
       z-index: 9;
       padding-left: 47px;
+
       p {
         padding-top: 40px;
         max-width: 130px;
       }
+
       img {
         padding-left: 30px;
       }
     }
+
     .middle {
       z-index: 5;
+
       img {
         padding-left: 30px;
       }
     }
+
     .right {
       z-index: 4;
       background: url(../images/bg-mask.svg) no-repeat right $white-85;
+
       p {
         max-width: 177px;
         font-size: 28px;
         line-height: 1.14;
       }
+
       .mistake {
         margin-top: 38px;
         position: relative;
+
         &:before {
           content: '';
           border: 2px solid $white;
@@ -47,37 +100,47 @@
       }
     }
   }
+
   .bottom-block {
     margin-top: 17px;
+
     .left {
       padding: 35px 0 0 65px;
+
       .title {
         max-width: 450px;
       }
+
       .link {
         margin-top: 45px;
       }
     }
+
     .right {
       padding: 45px 35px 0;
+
       .btn {
         a {
           font-size: 13px;
         }
       }
+
       p {
         padding-top: 15px;
         max-width: 128px;
         line-height: 1.29;
       }
+
       .logo {
         img {
           width: 100%;
           height: auto;
         }
       }
+
       .d-flex {
         margin-top: 38px;
+
         p {
           padding-right: 2px;
           padding-bottom: 39px;
@@ -85,6 +148,7 @@
       }
     }
   }
+
   .price {
     background: $white-92;
     padding: 20px 0;
@@ -95,12 +159,15 @@
     justify-content: center;
     margin-top: 16px;
   }
+
   .more-about {
     padding: 30px 0;
     margin-top: 86px;
+
     a {
       color: $dark;
     }
+
     img {
       margin-top: 22px;
     }

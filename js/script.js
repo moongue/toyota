@@ -80,7 +80,7 @@ function stylesSelect() {
 }
 
 function maskNumber() {
-    $(".mask-number").mask("+7( 999 ) 999 - 99 - 99");
+    $(".mask-number").mask("+7( 999 ) 999 - 99 -    99");
 }
 
 function smoothJump() {
@@ -100,6 +100,31 @@ function smoothJump() {
 
 }
 
+function carousel() {
+    var panels = document.getElementsByClassName("slide");
+    var actives = document.getElementsByClassName('choose');
+    for (i = 0; panels.length > i; i++) {
+        panels[i].onclick = function () {
+            var currentActive = actives[0];
+            if (currentActive)
+                currentActive.classList.remove("choose");
+
+            if (currentActive !== this)
+                this.classList.add("choose");
+
+            if ($(".first").hasClass("choose")) {
+                $(".change-text").html('<p class="t-upper t-dark">Ремонт блока Kdss Toyota\n' +
+                    '                                    <span class="t-bold">lс 200</span></p>');
+            }
+            if ($(".second").hasClass("choose")) {
+                $(".change-text").html('<p class="t-upper t-dark">Ремонт блока Kdss Toyota\n' +
+                    '                                    <span class="t-bold">Prado GXL</span></p>');
+            }
+
+        };
+    }
+}
+
 function fancybox() {
     $('[data-fancybox="gallery"]').fancybox();
 }
@@ -110,4 +135,5 @@ $(window).on('load', function() {
     maskNumber();
     smoothJump();
    fancybox();
+   carousel();
 });
